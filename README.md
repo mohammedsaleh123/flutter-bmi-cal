@@ -1,7 +1,8 @@
-# bmical
+# bmi calculator 🖩
 
-A new Flutter project.
-
+A Demo and sample Bmi Calculator Flutter project for calculate body math.
+![Screenshot_٢٠٢٤-٠٢-٢٩-١٣-١٧-٥٤-٦٤١_com example bmical](https://github.com/mohammedsaleh123/flutter-bmi-cal/assets/145376248/3d9c025f-0921-45ad-a867-a0327d312fe3)
+![Screenshot_٢٠٢٤-٠٢-٢٩-١٣-١٨-٠٣-٠٦٣_com example bmical](https://github.com/mohammedsaleh123/flutter-bmi-cal/assets/145376248/fae2d479-08a1-4295-b4cf-70c4e3e905bc)
 ## Getting Started
 
 This project is a starting point for a Flutter application.

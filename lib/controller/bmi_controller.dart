@@ -11,6 +11,7 @@ class BmiController extends GetxController {
   double bmiResult = 0;
   String genderResultText = '';
   String finalResultText = '';
+  String summaryText = '';
 
   sliderVal(double val) {
     height.value = val;
@@ -70,23 +71,18 @@ class BmiController extends GetxController {
   }
 
   finalResult() {
-    if (bmiResult < 18) {
-      finalResultText = 'Underweight';
-      update();
-    } else if (bmiResult > 18 && bmiResult <= 25) {
-      finalResultText = 'Normal weight';
-      update();
-    } else if (bmiResult > 25 && bmiResult <= 29.5) {
+    if (bmiResult >= 25) {
       finalResultText = 'Overweight';
+      summaryText = 'You have a higher than normal body weight. Try to exercise more.';
       update();
-    } else if (bmiResult > 29.5 && bmiResult <= 34.5) {
-      finalResultText = 'Obesity Class 1\n (Moderate)';
+    } else if (bmiResult > 18.5) {
+      finalResultText = 'Normal';
+      summaryText = 'You have a normal body weight. Good job!';
       update();
-    } else if (bmiResult > 34.5 && bmiResult <= 39.5) {
-      finalResultText = 'Obesity Class 2\n (Severe)';
-      update();
-    } else if (bmiResult > 39.5) {
-      finalResultText = 'Obesity Class 3\n (Very Severe)';
+    }
+     else {
+      finalResultText = 'Underweight';
+      summaryText = 'You have a lower than normal body weight. You can eat a bit more.';
       update();
     }
   }

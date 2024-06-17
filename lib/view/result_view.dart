@@ -136,17 +136,18 @@ class ResultView extends StatelessWidget {
                 ],
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(8),
+            Padding(
+              padding: const EdgeInsets.all(8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomText(
-                    text:
-                        '''Remember that \nthe true measure is\n your reflection\n in the mirror\n and how you feel\n about your health
-            ''',
-                    color: primaryColor,
-                    textSize: 20,
+                  Expanded(
+                    child: CustomText(
+                      text:
+                          "${controller.summaryText}\nRemember that...\nthe true measure is your reflection in the mirror and how you feel\n about your health",
+                      color: primaryColor,
+                      textSize: 20,
+                    ),
                   ),
                 ],
               ),

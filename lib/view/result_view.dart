@@ -14,6 +14,7 @@ class ResultView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<BmiController>(builder: (controller) {
       return Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
           leading: IconButton(
               onPressed: () {
